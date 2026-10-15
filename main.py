@@ -5,11 +5,21 @@ def translator(syntax):
     syntax = syntax.replace("strout", "print")
     syntax = syntax.replace("func", "def")
     syntax = syntax.replace("run", "exec")
-    syntax = syntax.replace("@", "class")
+    syntax = syntax.replace("@cl", "class")
     syntax = syntax.replace("|", "or")
     syntax = syntax.replace("&", "and")
     syntax = syntax.replace("÷", "not")
     syntax = syntax.replace("strin", "input")
+    syntax = syntax.replace("pipin", "import")
+    syntax = syntax.replace("include:gui.tkinter", "import tkinter")
+    syntax = syntax.replace("include:system.sys", "import sys")
+    syntax = syntax.replace("include:os.os", "import os")
+    syntax = syntax.replace("whl", "while")
+    syntax = syntax.replace("fetchsrc:", "from")
+    syntax = syntax.replace("cval:", "as")
+    syntax = syntax.replace("$include:", "with")
+    syntax = syntax.replace("<li>", "[")
+    syntax = syntax.replace("</li>", "]")
     return syntax
 
 
